@@ -3,7 +3,7 @@ import threading
 import time
 
 # List of Database server IPs
-db_ips = ["localhost"]  # Use "localhost" for local database
+db_ips = ["127.0.0.1"]  # Use "localhost" for local database
 
 
 def sender_thread(ip):
@@ -20,7 +20,7 @@ def sender_thread(ip):
         if message.lower() == "exit":
             break
 
-        sender_name = "Your Name"
+        sender_name = "Ali"
         current_time = time.strftime('%Y-%m-%d %H:%M:%S')
 
         sql = """
