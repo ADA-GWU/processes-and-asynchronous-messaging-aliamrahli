@@ -3,7 +3,7 @@ import threading
 import time
 
 # List of Database server IPs
-db_ips = ["127.0.0.1"]  # Use "localhost" for local database
+db_ips = ["127.0.0.1","127.0.0.1"]  # Use "localhost" for local database
 
 
 def reader_thread(ip):
@@ -31,9 +31,7 @@ def reader_thread(ip):
         rows = cursor.fetchall()
 
         for row in rows:
-            print('ali')
             if row:
-                # print('ali')
                 record_id, sender_name, message, sent_time = row
                 received_time = time.strftime('%Y-%m-%d %H:%M:%S')
 
