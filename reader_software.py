@@ -3,7 +3,7 @@ import threading
 import time
 
 # List of Database server IPs
-db_ips = ["127.0.0.1","127.0.0.1"]  # Use "localhost" for local database
+db_ips = ["127.0.0.1"]  # Use "localhost" for local database
 
 
 def reader_thread(ip):
